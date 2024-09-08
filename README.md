@@ -1,2 +1,4 @@
 # LeetCode-Problems
-This repository contains solutions to leetcode problems
+This repository contains solutions to leet code problems
+<br>
+Solved by: Muqaddas Mehboob

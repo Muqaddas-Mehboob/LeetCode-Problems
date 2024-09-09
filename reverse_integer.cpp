@@ -4,7 +4,7 @@ using namespace std;
 /*
 # Reverse Integer
 
-This repository contains a solution to the **Reverse Integer** problem implemented in C++. The program takes a 32-bit signed integer, reverses its digits, and handles overflow cases by returning `0` if the result goes beyond the allowable integer range.
+This is the solution to the **Reverse Integer** problem implemented in C++. The program takes a 32-bit signed integer, reverses its digits, and handles overflow cases by returning `0` if the result goes beyond the allowable integer range.
 
 ## Problem Statement
 
@@ -26,7 +26,7 @@ Given a 32-bit signed integer `n`, reverse its digits. If the reversed integer e
 
 ## Solution Approach
 
-1. Extract the last digit of the number using the modulus operation (`n % 10`).
+1. Extract the number's last digit using the modulus operation (`n % 10`).
 2. Append this digit to the result by multiplying the current result by 10 and adding the digit.
 3. Ensure the result does not overflow the 32-bit signed integer range.
 4. Return the reversed number, or `0` if overflow occurs.
@@ -34,7 +34,7 @@ Given a 32-bit signed integer `n`, reverse its digits. If the reversed integer e
 ## Complexity
 
 Time Complexity: O(log(n)) – The program processes each digit of the input number.
-Space Complexity: O(1) – Uses a constant amount of space for variables.
+Space Complexity: O(1) – Uses constant space for variables.
 
 */
 

@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isAnagram(string s, string t) {
 
-      // Approach : 01 (BY SORTING BOTH THE STRINGS IN ALPHABETHICAL ORDER AND COMPARING THEM)
+      // Approach: 01 (BY SORTING BOTH THE STRINGS IN ALPHABETICAL ORDER AND COMPARING THEM)
       // Time complexity = O(nlogn)
       // Space complexity = O(1)
       
@@ -19,9 +19,12 @@ public:
         }
         return true;
 
-      // Approach : 01 (BY USING HASH TABLE)
+        // OR RETURN (S==T)
+        
+
+      // Approach: 01 (BY USING HASH TABLE)
       // Time complexity = O(n)
-      // Space complexity = O(n)
+      // Space complexity = O(1)
       
       unordered_map <char, int> seen1;
       unordered_map <char, int> seen2;
@@ -33,10 +36,6 @@ public:
             seen1[s[i]]++; 
             seen2[t[i]]++;
         }
-        for(auto ch : seen1){
-            char entry = ch.first;
-            if(seen2[entry] != ch.second ) return false;
-        }
-        return true;
+        return seen1 == seen2;
     }
 };
